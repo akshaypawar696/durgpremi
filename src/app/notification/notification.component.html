@@ -1,1 +1,60 @@
-<p>notification works!</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <title>notification</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<div id="parentDiv" class="nopadding col-xs-12 col-md-12 col-lg-12 col-sm-12" style="background-image:url(assets/download.jpeg);">
+  <div id="addAndMenu" class="nopadding col-xs-3 col-md-3 col-lg-3 col-sm-3">
+    <div id="add" class="nopadding col-xs-4 col-md-4 col-lg-4 col-sm-4 col-xs-offset-4 col-md-offset-4 col-lg-offset-4 col-sm-offset-4">
+      <img id="addImg" class="nopadding img-responsive col-xs-12 col-md-12 col-lg-12 col-sm-12" onclick="Notify.showForm();" src="assets/add.png">
+    </div>
+    <div id="menu" class="nopadding col-xs-8 col-md-8 col-lg-8 col-sm-8 col-xs-offset-2 col-md-offset-2 col-lg-offset-2 col-sm-offset-2">
+      <ul>
+        <li>upcoming treks</li>
+        <li>List item...</li>
+        <li>List item...</li> 
+        <li>List item...</li> 
+        <li>List item...</li> 
+        <li>List item...</li> 
+        <li>List item...</li> 
+        <li>List item...</li> 
+        <li>List item...</li> 
+        <li>List item...</li> 
+      </ul>
+    </div>
+  </div>
+  <div id="details" class="nopadding col-xs-6 col-md-6 col-lg-6 col-sm-6 col-xs-offset-1 col-md-offset-1 col-lg-offset-1 col-sm-offset-1">
+    <div id="grpNameInfo" class="nopadding col-xs-12 col-md-12 col-lg-12 col-sm-12">
+      <div id="nameText" class="nopadding keys col-xs-6 col-md-6 col-lg-6 col-sm-6">Trekker Group Name:</div>
+      <div id="nameValue" class="nopadding values col-xs-6 col-md-6 col-lg-6 col-sm-6">Durgapremi group</div>
+    </div>
+    <div id="DateInfo" class="nopadding col-xs-12 col-md-12 col-lg-12 col-sm-12">
+      <div id="DateText" class="nopadding keys col-xs-6 col-md-6 col-lg-6 col-sm-6">Date:</div>
+      <div id="DateValue" class="nopadding values col-xs-6 col-md-6 col-lg-6 col-sm-6">15/08/2020</div>
+    </div>
+    <div id="startInfo" class="nopadding col-xs-12 col-md-12 col-lg-12 col-sm-12">
+      <div id="startText" class="nopadding keys col-xs-6 col-md-6 col-lg-6 col-sm-6">Start Point:</div>
+      <div id="startValue" class="nopadding values col-xs-6 col-md-6 col-lg-6 col-sm-6">Katraj,Pune</div>
+    </div>
+    <div id="costInfo" class="nopadding col-xs-12 col-md-12 col-lg-12 col-sm-12">
+      <div id="costText" class="nopadding keys col-xs-6 col-md-6 col-lg-6 col-sm-6">Cost/person:</div>
+      <div id="costValue" class="nopadding values col-xs-6 col-md-6 col-lg-6 col-sm-6">Rs.1000</div>
+    </div>
+    <div id="otherInfo" class="nopadding col-xs-12 col-md-12 col-lg-12 col-sm-12">
+      <div id="otherText" class="nopadding keys col-xs-6 col-md-6 col-lg-6 col-sm-6">Other Facilities:</div>
+      <div id="otherValue" class="nopadding values col-xs-6 col-md-6 col-lg-6 col-sm-6">Breakfast,Lunch.</div>
+    </div>
+  </div>
+  <div id="form" class="nopadding modal col-xs-12 col-md-12 col-lg-12 col-sm-12">
+  </div>
+  </div>

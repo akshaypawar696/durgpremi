@@ -1,0 +1,62 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 5vw;
+
+}
+
+#parentDiv{
+    height: 90vh;
+    user-select: none;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+#addImg{
+    border-radius: 50%;
+}
+#addAndMenu{
+    border-radius: 2vh;
+    background-color: #00000080;
+    height: 70vh;
+    font-size: 1.5vw;
+    margin-left: 2vw; 
+}
+#add{
+    margin-top: 5vh;
+}
+#menu{
+    background-color: white;
+    border-radius: 2vh;
+    height: 35vh;
+    margin-top:5vh;
+    overflow-y: scroll;
+}
+.nopadding{
+    padding: 0 !important;
+}
+
+#details{
+    border-radius: 2vh;
+    background-color: #00000080;
+    font-size: 2vw;
+    text-align: center;
+    height: 50vh;
+    margin-top: 5vh;
+    color:white;
+    font-family: sans-serif;
+}
+#grpNameInfo{
+    margin-top:10vh;
+}
+.keys{
+    text-align: right;
+}
+/*
+.values{
+    text-align: left;
+} */

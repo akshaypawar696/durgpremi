@@ -10,8 +10,7 @@ export class NotificationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('Inside notification');
-
+    document.body.style.backgroundImage = "url(assets/download.jpeg)";
   }
 
 }
