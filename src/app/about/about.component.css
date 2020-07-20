@@ -1,0 +1,73 @@
+.nopadding{
+    padding: 0;
+}
+.imgContainer{
+    height:50vh;
+    background-image: url('/assets/Forts-in-Maharashtra.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    opacity: 0.8;
+    box-sizing:border-box;
+}
+
+/* .aboutUsParentDiv{
+    border:1px solid #f8f9fa;
+    margin-top:1vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+.abtUsHeading{
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: teal;
+}
+.aboutUsDiv{
+    position: absolute;
+    top:0;
+    padding: 0;
+    margin: 2vh;
+    background-color: #e9ecef8c;
+}
+#more {
+    display: none;
+}
+.learnMoreBtn{
+    background-color:orange;
+    margin-left: 15px;
+    margin-bottom: 1rem;
+}
+.contactUsDiv{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: -8vh;
+    padding-bottom: 15px;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.contactUsHeading,.icons{
+    font-weight: bold;
+    color: teal;
+}
+.iconDiv{
+    margin-top:1vh;
+}
+
+.associationDiv{
+    margin-top: 5vh;
+}
+.associationCount{
+    color:orange;
+    font-size:60px;
+    height:50px;
+    line-height:0.6;
+    text-align:center;
+    font-family: 'Ranchers', cursive;
+}
+.associationText{
+    color: white;
+    font-size: 25px;
+    text-align:center;
+    padding:8px;
+}

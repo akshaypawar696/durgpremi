@@ -7,37 +7,34 @@
 </head>
 <body>
 
-  <nav style="background-attachment:fixed;" class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand">Logo</a>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a href="#" class="navbar-brand">Logo</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+              <a style="cursor: pointer;" class="nav-item nav-link" *ngFor="let obj of notificationArray"[id]='obj.id' (click)="createComponent(obj.id)">{{obj.name}}</a>
+          </div>
+          <div class="navbar-nav ml-auto">
+              <a style="cursor: pointer;" (click)="createComponent(5)" class="nav-item nav-link">Login</a>
+          </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li style="cursor: pointer;" *ngFor="let obj of notificationArray"><a [id]='obj.id' (click)="createComponent(obj.id)">{{obj.name}}</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a style="cursor: pointer;" (click)="createComponent(5)" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
-      </div>
-    </div>
   </nav>
-    
+
   <div class="container-fluid text-center">    
     <div class="row content">
       
-      <div style="height:91vh;overflow-x: auto;" class="col-sm-12 text-left"> 
+      <div style="height:auto;padding:0;" class="col-sm-12 text-left"> 
         <template #loadComponent>
         </template>
       </div>
 
     </div>
   </div>
-
+  <!-- <footer class='footer col-12'>
+    <div class='text-center'>copyright @ all rights reserved</div>
+  </footer> -->
 </body>
 </html>

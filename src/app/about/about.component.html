@@ -1,1 +1,64 @@
-<p> Akshay Pawar...!</p>
+<!-- <div class='imgContainer col-xs-12 col-sm-12 col-lg-12 col-md-12 nopadding'></div> -->
+
+<!-- <div class='aboutPage col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nopadding'>
+    <div class='col-xs-10 col-lg-8 col-sm-10 col-md-8 col-xs-offset-1 col-sm-offset-1 col-lg-offset-2 col-md-offset-2 nopadding'>
+        <h1 class='aboutUs text-center col-xs-12 col-sm-12 col-lg-12 col-md-12 nopadding' >About Us</h1>
+        <p class='text-center col-xs-12 col-sm-12 col-lg-12 col-md-12 ' style='padding:15px;border-bottom: 1px solid rgba(0,0,0,.125)'>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+    </div>
+
+
+    <div class='col-xs-12 col-lg-10 col-sm-12 col-md-10 col-lg-offset-1 col-md-offset-1 nopadding'>
+        <div class='card addReview col-xs-12 col-sm-12 col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1' style='margin-top:2vh'>
+            <h3>Add your review</h3>
+            <textarea rows="8" class='col-xs-12 col-sm-12 col-lg-12 col-md-12'></textarea>
+            <button type='button' class='btn btn-primary' style='margin-top: 2vh;'>Submit</button>
+        </div>
+        <div class='card personalInfo col-xs-12 col-sm-12 col-lg-4 col-md-4 col-lg-offset-1 col-md-offset-1'>
+            <h3>Contact Us</h3>
+            <h4>Email : abc@gmail.com</h4>
+            <h4>Mobile No. : 9999999999</h4>
+        </div>
+    
+        <div style='margin-top:3vh' class='col-xs-12 col-sm-12 col-lg-12 col-md-12 nopadding'>
+            <div class='association col-xs-12 col-sm-12 col-lg-3 col-md-3' style='margin-top:2vh' *ngFor="let obj of numberArray">
+                <div class='associationCount'>{{obj.count}}</div>
+                <div class='associationText'>{{obj.name}}</div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class='row aboutUsParentDiv col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nopadding' style='margin: 0;'>
+    <div class='imgContainer col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nopadding'></div>
+    <div class='aboutUsDiv jumbotron col-10 col-sm-10 col-lg-4 col-md-4 col-xl-4'>
+        <h1 class='abtUsHeading col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12'>About Us</h1>
+        <p class='col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12' style='padding:0 15px; color:black'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+        <button type="button" class="learnMoreBtn btn btn-warning col-5 col-sm-5 col-lg-3 col-md-3 col-xl-3">Learn More</button>
+    </div>   
+</div>
+
+
+<div class='row contactUsDiv col-10 col-sm-10 col-lg-8 col-md-8 col-xl-8 offset-1 offset-sm-1 offset-lg-2 offset-md-2 offset-xl-2 nopadding'>
+    <h1 class='text-center contactUsHeading col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12'>Contact Us</h1>
+    <div class='jumbotron col-10 col-sm-10 col-lg-4 col-md-4 col-xl-4 offset-1 offset-sm-1 offset-md-1 offset-lg-1 offset-xl-1'>
+        <div class='iconDiv col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12'>
+            <i class="fa fa-phone icons" aria-hidden="true"></i>
+            <span> +918796541230</span>
+        </div>
+        <div class='iconDiv col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12'>
+            <i class="fa fa-envelope-o icons" aria-hidden="true"></i>
+            <span> abc.xyz@gmail.com</span>
+        </div>
+    </div>
+    <div class='jumbotron col-10 col-sm-10 col-lg-5 col-md-5 col-xl-5  offset-1 offset-sm-1 offset-md-1 offset-lg-1 offset-xl-1' style='padding:15px'>
+        <h4>Add Review</h4>
+        <textarea rows="2" class='col-xs-12 col-sm-12 col-lg-12 col-md-12'></textarea>
+        <button type="button" class="learnMoreBtn btn btn-warning col-5 col-sm-5 col-lg-4 col-md-4 col-xl-4">Submit</button>
+    </div>
+</div>
+
+<div  class='row associationDiv col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nopadding'>
+    <div class='association col-12 col-sm-12 col-lg-3 col-md-3 col-xl-3' style='margin-top:2vh' *ngFor="let obj of numberArray">
+        <div class='associationCount'>{{obj.count}}</div>
+        <div class='associationText'>{{obj.name}}</div>
+    </div>
+</div>
