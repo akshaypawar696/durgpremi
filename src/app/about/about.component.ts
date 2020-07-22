@@ -18,11 +18,7 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
     console.log('Inside about');
-    display();
   }
 
   
-}
-function display(){
-  console.log('you are in fun');
 }
