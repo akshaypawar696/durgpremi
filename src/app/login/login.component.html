@@ -1,85 +1,42 @@
-<!DOCTYPE html>
-<html>  
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <div *ngIf="pageIndex == 1" class='outerDiv user_card'>
-        <div class="d-flex justify-content-center col-sm">
-            <div class="brand_logo_container">
-                <img src="/assets/download.jpeg" class="brand_logo" alt="Logo">
-            </div>
-        </div>
-        <div class="d-flex justify-content-center form_container col-sm">
+<div *ngIf="pageIndex == 1" class='row mt-4 logInPage' style='margin-left: 0;margin-right: 0;padding:20px 0' >
+    <div
+        class='card  col-10 col-sm-10 col-lg-3 col-md-4 col-xl-4 offset-1 offset-sm-1 offset-lg-4 offset-md-4 ofset-xl-4 mb-2' style='padding:20px 0;'>
+        <h1 class='text-center title'>DURGAPREMI</h1>
+        <div
+            class='loginDiv col-10 col-sm-10 col-lg-10 col-md-10 col-xl-10  offset-1 offset-sm-1 offset-lg-1 offset-md-1 ofset-xl-1'>
             <form>
-                <div class="input-group mb-3 col-sm">
-                    <div class="input-group-append">
-                    </div>
-                    <input class="form-control input_user" type="text" name="" value="" placeholder="username">
-                </div>
-                <div class="input-group mb-2 col-sm">
-                    <div class="input-group-append">
-        
-                    </div>
-                    <input type="password" name="" class="form-control input_pass" value="" placeholder="password">
-                </div>
-                <div class="form-group">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customControlInline">
-                        <label class="custom-control-label" for="customControlInline">Remember me</label>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center mt-3 login_container">
-                        <button type="button" name="button" class="btn login_btn">Login</button>
-                </div>
+                <input class="form-control mt-3 inputStyle " type="text" name='uName' placeholder="Phone number, username or email">
+                <input class="form-control mt-3 inputStyle" type="password" name='pswd' placeholder="Password">
+                <button type="button" class="col-10 col-sm-10 col-lg-10 col-md-10 col-xl-10  offset-1 offset-sm-1 offset-lg-1 offset-md-1 ofset-xl-1 mt-3 mb-2 btn btn-primary btn-sm loginBtn">Log In</button>
             </form>
         </div>
-        <div class='forgetPassword'>
-            <div class="d-flex justify-content-center links">
-                Don't have an account? <a (click)="changePage()" class="ml-2">Sign Up</a>
-            </div>
-            <div class="d-flex justify-content-center links">
-                <a href="#">Forgot your password?</a>
-            </div>
+        <div class='col-10 col-sm-10 col-lg-10 col-md-10 col-xl-10  offset-1 offset-sm-1 offset-lg-1 offset-md-1 ofset-xl-1 text-center nopadding mt-3' style='margin-bottom: 1.25rem;'>
+            <a href='' style='color:#00376b'>Forgot password?</a>
         </div>
     </div>
+    <div
+        class='card  col-10 col-sm-10 col-lg-4 col-md-4 col-xl-4 offset-1 offset-sm-1 offset-lg-4 offset-md-4 ofset-xl-4 text-center' style='padding:10px 0;'>
+        <p style='margin-top:1rem'>Don't have an account? <a href='' style='font-weight: bold;' (click)='changePage()'>Sign Up</a></p>
+    </div>
+</div>
 
-
-    <div *ngIf="pageIndex == 2" class='outerDiv user_card'>
-        <div class="d-flex justify-content-center col-sm">
-            <div class="brand_logo_container">
-                <img src="/assets/download.jpeg" class="brand_logo" alt="Logo">
-            </div>
-        </div>
-        <div class="d-flex justify-content-center form_container">
+<div *ngIf="pageIndex == 2" class='signUpPage row mt-4 ' style='margin-left: 0;margin-right: 0;padding:20px 0'>
+    <div
+    class='card  col-10 col-sm-10 col-lg-3 col-md-4 col-xl-4 offset-1 offset-sm-1 offset-lg-4 offset-md-4 ofset-xl-4 mb-2' style='padding:20px 0;'>
+        <h1 class='text-center title'>DURGAPREMI</h1>
+        <div
+            class='signUpDiv col-10 col-sm-10 col-lg-10 col-md-10 col-xl-10  offset-1 offset-sm-1 offset-lg-1 offset-md-1 ofset-xl-1'>
             <form>
-                <div class="input-group mb-3">
-                    <div class="input-group-append"></div>
-                    <input type="text" name="" class="form-control input_user" value="" placeholder="email">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-append"></div>
-                    <input type="number" name="" class="form-control input_user" value="" placeholder="contact">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-append"></div>
-                    <input type="text" name="" class="form-control input_user" value="" placeholder="username">
-                </div>
-                <div class="input-group mb-2">
-                    <div class="input-group-append"></div>
-                    <input type="password" name="" class="form-control input_pass" value="" placeholder="password">
-                </div>
-                <div class="d-flex justify-content-center mt-3 login_container">
-                    <button type="button" name="button" class="btn login_btn">Sign Up</button>
-                </div>
+                <input class="form-control mt-3 inputStyle " name='usename' type="text" placeholder="Mobile number or email">
+                <input class="form-control mt-3 inputStyle " name='usename' type="text" placeholder="Full Name">
+                <input class="form-control mt-3 inputStyle " name='usename' type="text" placeholder="Username">
+                <input class="form-control mt-3 inputStyle" name='password' type="password" placeholder="Password">
+                <button type="button" class="col-10 col-sm-10 col-lg-10 col-md-10 col-xl-10  offset-1 offset-sm-1 offset-lg-1 offset-md-1 ofset-xl-1 mt-3 mb-2 btn btn-primary btn-sm loginBtn">Sign Up</button>
             </form>
         </div>
-        <div class="mt-4">
-            <div class="d-flex justify-content-center links">
-                Already have an account? <a (click)="changePage()" class="ml-2">Login</a>
-            </div>
-        </div>
     </div>
-</body>
-</html>
+    <div
+        class='card  col-10 col-sm-10 col-lg-4 col-md-4 col-xl-4 offset-1 offset-sm-1 offset-lg-4 offset-md-4 ofset-xl-4 text-center' style='padding:10px 0;'>
+        <p style='margin-top:1rem'>Have an account? <a href='' style='font-weight: bold;' (click)='changePage()'>Log In</a></p>
+    </div>
+</div>

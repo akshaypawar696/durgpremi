@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
 
   }
 
-  changePage(){
+changePage(){
     if(this.pageIndex == 1)
       this.pageIndex = 2;
     else
