@@ -12,8 +12,8 @@ html,body
     padding: 0!important;
 }
 .card{
-    border:1px solid grey;
-    background-color: white;
+    border:1px solid #dbdbdb;
+    background-color: #fff;
 }
 .title{
     color:black;

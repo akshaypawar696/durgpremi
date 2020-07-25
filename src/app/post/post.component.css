@@ -1,0 +1,63 @@
+.nopadding{
+    padding: 0;
+}
+.nomargin{
+    margin:0
+}
+.filterDiv{
+    background-color: white;
+}
+.postDiv{
+    overflow-y: auto;
+    height:100%;
+   /*  border:1px solid #dbdbdb; */
+}
+.card-header,.card-footer{
+    background-color: white;
+}
+.profilePicDiv{
+    width:55px;
+    height:55px;
+}
+.profilePic{
+    width: 100%;
+    height:100%;
+    padding:2px;
+    border:1.5px solid brown;
+}
+.postImgDiv{
+    object-fit: contain;
+    height:35vh;
+    width:100%;
+}
+.postImg{
+   width:100%;
+   height: 100%;
+}
+.iconDiv{
+    padding:10px 0;
+}
+.iconDiv .fa{
+    font-size: 30px;
+}
+.captionDiv{
+    padding:10px 15px;
+}
+.caption{
+    display: inline-block;
+    margin-left: 5px;
+}
+.comment{
+    border:none;
+    overflow-y: auto;
+    resize:none;
+    height:24px
+}
+textarea:focus{
+    border:none;
+    outline: none;
+}
+
+.modal{
+    top:45%
+}
