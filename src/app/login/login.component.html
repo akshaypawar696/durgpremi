@@ -1,10 +1,18 @@
-<div *ngIf="pageIndex == 1" class='row mt-4 logInPage' style='margin-left: 0;margin-right: 0;padding:20px 0' >
+<div *ngIf="pageIndex == 1" class='row  logInPage' style='margin-left: 0;margin-right: 0;padding:20px 0' >
     <div
-        class='card  col-10 col-sm-10 col-lg-3 col-md-4 col-xl-4 offset-1 offset-sm-1 offset-lg-4 offset-md-4 ofset-xl-4 mb-2' style='padding:20px 0;'>
-        <h1 class='text-center title'>DURGAPREMI</h1>
+        class='card loginCard col-10 col-sm-10 col-lg-4 col-md-4 col-xl-4 offset-1 offset-sm-1 offset-lg-4 offset-md-4 ofset-xl-4 mb-2' style='padding:20px 0;'>
+       <!--  <h1 class='text-center title'>DURGAPREMI</h1> -->
         <div
             class='loginDiv col-10 col-sm-10 col-lg-10 col-md-10 col-xl-10  offset-1 offset-sm-1 offset-lg-1 offset-md-1 ofset-xl-1'>
-            <form>
+           <!--  <div class='logoDiv rounded-circle col-8 col-sm-8 col-lg-6 col-md-6 col-xl-6 offset-2 offset-sm-2 offset-lg-3 offset-md-3 offset-xl-3'>
+                <img src='/assets/logo.png' class='rounded-circle'>
+            </div> -->
+            <div class="d-flex justify-content-center">
+                <div class="brand_logo_container">
+                    <img src="/assets/logo.png" class="brand_logo" alt="Logo">
+                </div>
+            </div>
+            <form style='margin-top: 12vh;'>
                 <input class="form-control mt-3 inputStyle " type="text" name='uName' placeholder="Phone number, username or email">
                 <input class="form-control mt-3 inputStyle" type="password" name='pswd' placeholder="Password">
                 <button type="button" class="col-10 col-sm-10 col-lg-10 col-md-10 col-xl-10  offset-1 offset-sm-1 offset-lg-1 offset-md-1 ofset-xl-1 mt-3 mb-2 btn btn-primary btn-sm loginBtn">Log In</button>
@@ -15,18 +23,23 @@
         </div>
     </div>
     <div
-        class='card  col-10 col-sm-10 col-lg-4 col-md-4 col-xl-4 offset-1 offset-sm-1 offset-lg-4 offset-md-4 ofset-xl-4 text-center' style='padding:10px 0;'>
-        <p style='margin-top:1rem'>Don't have an account? <a style='font-weight: bold;' (click)='changePage()'>Sign Up</a></p>
+        class='card  col-10 col-sm-10 col-lg-4 col-md-4 col-xl-4 offset-1 offset-sm-1 offset-lg-4 offset-md-4 ofset-xl-4 text-center' style='padding:10px 0;' (click)='changePage()'>
+        <p style='margin-top:1rem'>Don't have an account? <a style='font-weight: bold;color:#007bff' >Sign Up</a></p>
     </div>
 </div>
 
 <div *ngIf="pageIndex == 2" class='signUpPage row mt-4 ' style='margin-left: 0;margin-right: 0;padding:20px 0'>
     <div
-    class='card  col-10 col-sm-10 col-lg-3 col-md-4 col-xl-4 offset-1 offset-sm-1 offset-lg-4 offset-md-4 ofset-xl-4 mb-2' style='padding:20px 0;'>
-        <h1 class='text-center title'>DURGAPREMI</h1>
+    class='card signupCard col-10 col-sm-10 col-lg-3 col-md-4 col-xl-4 offset-1 offset-sm-1 offset-lg-4 offset-md-4 ofset-xl-4 mb-2' style='padding:20px 0;'>
+        <!-- <h1 class='text-center title'>DURGAPREMI</h1> -->
         <div
             class='signUpDiv col-10 col-sm-10 col-lg-10 col-md-10 col-xl-10  offset-1 offset-sm-1 offset-lg-1 offset-md-1 ofset-xl-1'>
-            <form>
+            <div class="d-flex justify-content-center">
+                <div class="brand_logo_container">
+                    <img src="/assets/logo.png" class="brand_logo" alt="Logo">
+                </div>
+            </div>
+            <form style='margin-top: 12vh;'>
                 <input class="form-control mt-3 inputStyle " name='usename' type="text" placeholder="Mobile number or email">
                 <input class="form-control mt-3 inputStyle " name='usename' type="text" placeholder="Full Name">
                 <input class="form-control mt-3 inputStyle " name='usename' type="text" placeholder="Username">
@@ -36,7 +49,7 @@
         </div>
     </div>
     <div
-        class='card  col-10 col-sm-10 col-lg-4 col-md-4 col-xl-4 offset-1 offset-sm-1 offset-lg-4 offset-md-4 ofset-xl-4 text-center' style='padding:10px 0;'>
-        <p style='margin-top:1rem'>Have an account? <a style='font-weight: bold;' (click)='changePage()'>Log In</a></p>
+        class='card  col-10 col-sm-10 col-lg-4 col-md-4 col-xl-4 offset-1 offset-sm-1 offset-lg-4 offset-md-4 ofset-xl-4 text-center' style='padding:10px 0;' (click)='changePage()'>
+        <p style='margin-top:1rem'>Have an account? <a style='font-weight: bold;color:#007bff' >Log In</a></p>
     </div>
 </div>

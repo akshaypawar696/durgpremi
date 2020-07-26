@@ -14,13 +14,46 @@ html,body
 .card{
     border:1px solid #dbdbdb;
     background-color: #fff;
+    
 }
-.title{
+.loginCard{
+    margin-top:13vh;
+}
+
+.signupCard{
+    margin-top:7vh;
+}
+.logoDiv{
+    height:21vh;
+    margin-top: -15vh;
+    padding: 15px;
+}
+.logoDiv img{
+    width: 100%;
+    height: 100%;
+}
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -111px;
+    border-radius: 50%;
+    background: #fafafa;
+    padding: 10px;
+    text-align: center;
+}
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+/* .title{
     color:black;
     margin:20px 0;
     font-family: 'Oleo Script', cursive;
 }
-
+ */
 .loginBtn{
     font-weight: bold;
     padding: 5px 9px;

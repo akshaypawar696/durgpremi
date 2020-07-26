@@ -18,33 +18,48 @@
                     <div class='profilePicDiv rounded-circle '>
                         <img src='/assets/download.jpeg' class='profilePic rounded-circle'>
                     </div>
-                    <div style='display: inline-flex;width:85%'>
+                    <div style='display: inline-flex;width:90%'>
                         <div style='width:100%;padding:10px 10px'>
                             <div style='font-size: 14px;'>Durgpremi</div>
                             <div style='font-size: 12px;'>New Sangvi</div>
                         </div>
-                        <div style='padding:10px 0;text-align: center;' class='popOut' data-toggle="modal" data-target="#myModal">
+                        <div style='padding:15px 0;text-align: center;' class='popOut' data-toggle="modal" data-target="#myModal">
                             <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
     
                 <div class="card-body nopadding">
-                    <div class='postImgDiv col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nopadding'>
+                    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                          <div class="postImgDiv carousel-item active">
+                            <img class="postImg d-block w-100" src="/assets/download.jpeg" data-src="holder.js/900x400?theme=social" alt="First slide">
+                          </div>
+                          <div class="postImgDiv carousel-item">
+                            <img class="postImg d-block w-100" src="/assets/Forts-in-Maharashtra.jpg" data-src="holder.js/900x400?theme=industrial" alt="Second slide">
+                          </div>
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExample" data-slide-to="0" class="active carouselList"></li>
+                            <li data-target="#carouselExample" data-slide-to="1" class='carouselList'></li>
+                        </ol>
+                    </div>
+                    <!-- <div class='postImgDiv col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nopadding'>
                         <img src='/assets/download.jpeg'
                             class='postImg col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nopadding'>
-                    </div>
+                    </div> -->
                     <div class='row col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nomargin nopadding'>
                         <div class='iconDiv text-center col-1 col-sm-1 col-lg-1 col-md-1 col-xl-1'>
-                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                           <!--  <i class="fa fa-heart-o" aria-hidden="true"></i> -->
+                           <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
                         </div>
                         <div class='iconDiv text-center col-2 col-sm-2 col-lg-1 col-md-1 col-xl-1'>
                             <!-- <i class="fa fa-share-alt" aria-hidden="true"></i> -->
                             <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
                         </div>
-                        <div class='iconDiv text-center col-1 col-sm-1 col-lg-1 col-md-1 col-xl-1'>
+                        <!-- <div class='iconDiv text-center col-1 col-sm-1 col-lg-1 col-md-1 col-xl-1'>
                             <i class="fa fa-comment-o" aria-hidden="true"></i>
-                        </div>
+                        </div> -->
                     </div>
                     <div class='captionDiv row col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nomargin'>
                         <span style='font-weight: bold;font-size: 15px;'>Durgpremi</span>
@@ -58,7 +73,7 @@
                                 <textarea class='comment col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nopadding'
                                     placeholder='Add a comment...'></textarea>
                             </div>
-                            <div class='text-center text-primary col-2 col-sm-2 col-lg-2 col-md-2 col-xl-2 nopadding'>
+                            <div class='text-primary col-2 col-sm-2 col-lg-2 col-md-2 col-xl-2 nopadding' style='font-weight: 600;text-align: right;'>
                                 Post
                             </div>
                         </div>
@@ -72,33 +87,48 @@
                 <div class='profilePicDiv rounded-circle '>
                     <img src='/assets/download.jpeg' class='profilePic rounded-circle'>
                 </div>
-                <div style='display: inline-flex;width:85%'>
+                <div style='display: inline-flex;width:90%'>
                     <div style='width:100%;padding:10px 10px'>
                         <div style='font-size: 14px;'>Durgpremi</div>
                         <div style='font-size: 12px;'>New Sangvi</div>
                     </div>
-                    <div style='padding:10px 0;text-align: center;' class='popOut'>
+                    <div style='padding:15px 0;text-align: center;' class='popOut' data-toggle="modal" data-target="#myModal">
                         <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
 
             <div class="card-body nopadding">
-                <div class='postImgDiv col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nopadding'>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                      <div class="postImgDiv carousel-item active">
+                        <img class="postImg d-block w-100" src="/assets/download.jpeg" data-src="holder.js/900x400?theme=social" alt="First slide">
+                      </div>
+                      <div class="postImgDiv carousel-item">
+                        <img class="postImg d-block w-100" src="/assets/Forts-in-Maharashtra.jpg" data-src="holder.js/900x400?theme=industrial" alt="Second slide">
+                      </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active carouselList"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class='carouselList'></li>
+                    </ol>
+                </div>
+                <!-- <div class='postImgDiv col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nopadding'>
                     <img src='/assets/download.jpeg'
                         class='postImg col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nopadding'>
-                </div>
+                </div> -->
                 <div class='row col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nomargin nopadding'>
                     <div class='iconDiv text-center col-1 col-sm-1 col-lg-1 col-md-1 col-xl-1'>
-                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                       <!--  <i class="fa fa-heart-o" aria-hidden="true"></i> -->
+                       <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
                     </div>
                     <div class='iconDiv text-center col-2 col-sm-2 col-lg-1 col-md-1 col-xl-1'>
                         <!-- <i class="fa fa-share-alt" aria-hidden="true"></i> -->
                         <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
                     </div>
-                    <div class='iconDiv text-center col-1 col-sm-1 col-lg-1 col-md-1 col-xl-1'>
+                    <!-- <div class='iconDiv text-center col-1 col-sm-1 col-lg-1 col-md-1 col-xl-1'>
                         <i class="fa fa-comment-o" aria-hidden="true"></i>
-                    </div>
+                    </div> -->
                 </div>
                 <div class='captionDiv row col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nomargin'>
                     <span style='font-weight: bold;font-size: 15px;'>Durgpremi</span>
@@ -112,7 +142,7 @@
                             <textarea class='comment col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 nopadding'
                                 placeholder='Add a comment...'></textarea>
                         </div>
-                        <div class='text-center text-primary col-2 col-sm-2 col-lg-2 col-md-2 col-xl-2 nopadding'>
+                        <div class='text-primary col-2 col-sm-2 col-lg-2 col-md-2 col-xl-2 nopadding' style='font-weight: 600;text-align: right;'>
                             Post
                         </div>
                     </div>

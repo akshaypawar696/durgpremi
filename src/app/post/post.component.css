@@ -18,12 +18,14 @@
 .profilePicDiv{
     width:55px;
     height:55px;
+    display: inline-block;
+    vertical-align: middle;
 }
 .profilePic{
     width: 100%;
     height:100%;
     padding:2px;
-    border:1.5px solid brown;
+    border:1px solid brown;
 }
 .postImgDiv{
     object-fit: contain;
@@ -31,11 +33,22 @@
     width:100%;
 }
 .postImg{
-   width:100%;
+  /*  width:100%; */
    height: 100%;
 }
+.carousel-indicators{
+    position: unset;
+    margin-bottom: 0;
+}
+.carouselList{
+    background-color: brown;
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+}
+
 .iconDiv{
-    padding:10px 0;
+    /* padding:10px 0; */
 }
 .iconDiv .fa{
     font-size: 30px;
@@ -59,5 +72,5 @@ textarea:focus{
 }
 
 .modal{
-    top:45%
+    top:40%
 }
